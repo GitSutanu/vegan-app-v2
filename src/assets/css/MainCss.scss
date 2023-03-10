@@ -9,6 +9,11 @@
     font-weight: 400;
     font-style: normal;
 }
+body.open-nav,
+html.open-nav {
+    height: 100%;
+    overflow: hidden !important;
+}
 
 @font-face {
     font-family: 'Woodgrit';
@@ -65,7 +70,35 @@
 }
 
 
+
+
 .main_site {
+    .trnr_tab *{
+        transition: all 0.3s;
+    }
+    .RRT__tab{
+        padding: 0;
+    }
+        .RRT__tab.RRT__tab--selected h6 {
+            color: #fff;
+        }
+        .RRT__tab.RRT__tab--selected {
+            border: 1px solid #74a639 !important;
+            background-color: #74a639 !important;
+            width: 100%;
+        }
+        .coching-srvc-box p:last-child {
+            margin-bottom: 0;
+        }
+
+
+    .coching-srvc-box ul.cmn-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .coching-srvc-box .cmn-list li {
+        width: 50%;
+    }
     .navbar-nav a.active {
         color: #74a639;
     }
@@ -748,6 +781,7 @@
     .bnr-social-link p {
         font-size: 14px;
         color: #969993;
+        color: #fff;
         font-weight: 400;
         font-family: "Merriweather";
         line-height: 1;
@@ -758,6 +792,7 @@
         width: 1px;
         height: 83px;
         background-color: #969993;
+        background-color: #fff;
         display: block;
         margin-bottom: 20px;
         margin-left: 8px;
@@ -775,6 +810,7 @@
 
     .bnr-social-link ul li a {
         color: #969993;
+        color: #fff;
     }
 
     .sec1 {
@@ -1020,8 +1056,12 @@
         height: 100%;
         object-fit: cover;
     }
-
+    .slider-for .slick-slide > div {
+        width: 90%;
+        text-align: center;
+      }
     .slider-for .play-btn {
+        margin: auto;
         width: 110px;
         height: 110px;
         border-radius: 100%;
@@ -1287,7 +1327,7 @@
         position: absolute;
         left: 0;
         top: 2px;
-        // background: url(../images/tick.png) center center no-repeat;
+        background: url(../images/tick.png) center center no-repeat;
     }
 
     .cmn-list2 li:after {
@@ -1645,7 +1685,34 @@
 
 }
 
+@media screen and (min-width: 992px) {
+    .main_site {
+        .RRT__tab{
+            margin-bottom: 10px;
+        }
+        .RRT__tab {
+            background: transparent;
+            border: 0;
+            padding: 0;
+        }
+        .RRT__panel {
+            border: 0;
+            padding: 0;
+            width: 60%;
+        }
+        .RRT__tabs {
+            flex-direction: column;
+            width: calc(40% - 20px);
+        }
+        .RRT__container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+    }
 
+}
 
 /*desktop & big screen size*/
 @media screen and (min-width: 1200px) {
@@ -1686,6 +1753,9 @@
 /* =====body css end===== */
 /* =====Responsive===== */
 @media screen and (max-width: 1699px) {
+    .main_site {
+        font-size: 16px;
+    }
     .main_site {
         .bnr-social-link {
             left: 40px;
@@ -1739,6 +1809,7 @@
 
         .slider-for .slick-slide {
             height: 540px;
+            position: relative;
         }
 
         .slider-nav h5 {
@@ -2111,6 +2182,9 @@
 
 
 @media (max-width: 991px) {
+    body {
+        font-size: 14px;
+    }
     .main_site {
 
         /* navbar*/
@@ -2275,12 +2349,7 @@
             transition: background-color 0.5s linear;
         }
 
-        body.open-nav,
-        html.open-nav {
-            height: 100%;
-            overflow: hidden !important;
-        }
-
+        
         /* push nav end */
 
         h1 {
@@ -2518,6 +2587,28 @@
         .resp-vtabs ul.resp-tabs-list {
             max-width: 100%;
         }
+
+
+
+
+
+        .RRT__panel {
+            padding: 0 !important;
+            
+        }
+         .RRT__tab {
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+         .RRT__tab.RRT__tab--selected{
+            margin-bottom: 0px;
+        }
+        .RRT__tab:focus{
+            background-color: transparent;
+        }
+        .RRT__panel {
+            margin-bottom: 25px !important;
+        }
     }
 
 }
@@ -2546,11 +2637,18 @@
         .resp-accordion.hor_1.resp-tab-active .tab-nav-outer h6 {
             color: #fff;
         }
+         .coching-srvc-box .cmn-list li {
+            width: 100%;
+            font-size: 13px;
+        }
     }
 
 }
 
 @media (max-width: 767px) {
+    body {
+        font-size: 12px;
+    }
     .main_site {
 
         /* images alignment for wordpress content pages */

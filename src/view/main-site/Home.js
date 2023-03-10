@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../../component/Banner";
 import Footer from "../../component/Footer";
 import Header from "../../component/Header";
+import CustomHomeSlider from "../../component/CustomHomeSlider";
 
 
 function Home() {
@@ -70,8 +71,7 @@ function Home() {
 
       <section className="sec2">
         <div className="container">
-
-         
+          <CustomHomeSlider />
         </div>
       </section>
 

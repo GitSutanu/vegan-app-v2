@@ -35,7 +35,7 @@ var fintess_trainer_slider = {
 };
 const services = [
   {
-    name: "Torre Washington", img: `${require("../../assets/images/tab-nav-img.png")}`, content_title: "AVITALITY guide for FREE", content_subtitle: "This bodybuilding guide is the PRIMING tool to help you build a solid foundation in your quest for a great physique.", content_property: `
+    name: "1Torre Washington", profile_img: `${require("../../assets/images/tab-nav-img.png")}`,banner_img: `${require("../../assets/images/resp-tabs-contant-img.jpg")}`, content_title: "AVITALITY guide for FREE", content_subtitle: "This bodybuilding guide is the PRIMING tool to help you build a solid foundation in your quest for a great physique.", content_subtitle2:null, content_property: `
   <ul class="cmn-list">
   <li>Introduction To Veganism</li>
   <li>45+ Simple Vegan Meals</li>
@@ -47,23 +47,87 @@ const services = [
 </ul>`, sub_text: "Let's dig in, eat up, and go vegan with ease!"
   },
   {
-    name: "Naturally Stefanie", img: "images/tab-nav-img.png", content_title: "GET STRONGER WITH NATURALLY STEFANIE", content_subtitle: "This bodybuilding guide is the PRIMING tool to help you build a solid foundation in your quest for a great physique.", content_property: `
-<ul class="cmn-list">
-<li>Introduction To Veganism</li>
-<li>45+ Simple Vegan Meals</li>
-<li>Fire-up Your Metabolism</li>
-<li>Reshape Your Physique</li>
-<li>8 Week Training Plan</li>
-<li>Videos For Every Exercise</li>
-<li>Built For Men &amp; Women</li>
-</ul>`, sub_text: "Let's dig in, eat up, and go vegan with ease!"
+    name: "2Naturally Stefanie", profile_img: `${require("../../assets/images/tab-nav-img2.png")}`,banner_img: `${require("../../assets/images/resp-tabs-contant-img6.jpg")}`, content_title: "GET STRONGER WITH NATURALLY STEFANIE", content_subtitle: "You’ll receive EXCLUSIVE workouts designed to keep you motivated, consistent and always seeing results! ", content_subtitle2:null, content_property: `
+    <ul class="cmn-list">
+    <li>Kick up the intensity with circuit
+        and HIIT training guides</li>
+    <li>Build confidence &amp; get stronger with 
+        exclusive workout plans for all levels</li>
+    <li>Keep workouts feeling fresh with a 
+        library filled with hundreds of sessions!</li>
+        <li>Countless plant-based recipes
+            to excite you at every meal</li>
+        <li>Bespoke meal-plans for every
+            workout guide</li>
+        <li>Full nutritional info so you never have to worry about healthy eating again</li>
+    </ul>`, sub_text: null
   },
+  {
+    name: "3Brian Turner", profile_img: `${require("../../assets/images/tab-nav-img3.png")}`,banner_img: `${require("../../assets/images/resp-tabs-contant-img2.jpg")}`, content_title: "The Brian Turner BONUSES", content_subtitle: "I understand that I have the ability to transform my body, mind and health. I will become a walking example of what is possible on a plant-based lifestyle", content_subtitle2:null, content_property: `
+    <ul class="cmn-list">
+    <li>Eat Vegan or Die Trying (Recipe book) </li>
+    <li>Eat Vegan or Die Trying VOL II
+        (Unreleased recipe book)</li>
+    <li>Vegan Blueprint (vegan/fitness 
+        beginner guidebook) </li>
+        <li>Supplement Master Guide For Muscle</li>
+        <li>Gut Health Master Guide</li>
+        <li>Vegan Meal Prep Playlist </li>
+        <li>Private Buff Vegan FB Group </li>
+        <li>Weekly Q&amp;A Group Calls</li>
+    </ul>`, sub_text: null
+  },
+  {
+    name: "4Lifting Vegan Logic", profile_img: `${require("../../assets/images/tab-nav-img4.png")}`,banner_img: `${require("../../assets/images/resp-tabs-contant-img5.jpg")}`, content_title: "vegan activist and personal trainer", content_subtitle: "Danny AKA Lifting Vegan Logic is a vegan activist and personal trainer who uses logic, reason, and sarcasm to combat, and cope with, anti-vegan nonsense. ", content_subtitle2:null, content_property: `
+    <ul class="cmn-list">
+    <li>Danny’s vegan journey. 
+        Did he have some stupid excuses?</li>
+    <li>Why Veganism Makes Smart 
+        People Stupid.</li>
+    <li>“Name the trait.” A super helpful 
+        strategy for animal rights activists.</li>
+        <li>True health being a matter of not just 
+            personal health also the health of your 
+            family, your community and the planet. </li>
+        <li>The importance of compassion for 
+            animals, for fellow humans and 
+            especially self compassion.</li>
+    </ul>`, sub_text: null
+  },
+  {
+    name: "5Conscious Muscle", profile_img: `${require("../../assets/images/tab-nav-img5.png")}`,banner_img: `${require("../../assets/images/resp-tabs-contant-img3.jpg")}`, content_title: "Are you ready for your transformation?", content_subtitle: "Vegan Diet Plans & Exercise Guides personalized & designed around your goals & your body. Plant Based Nutrition, Plant Built Physiques.", content_subtitle2:"Below will be a few different coaching programs for you to choose from. I don’t believe in a cookie cutter/one size fits all approach so I have a few different options so you can choose which best fits your needs. ", content_property: `
+  <ul class="cmn-list">
+  <li>One-on-One Coaching </li>
+  <li>Macro + Menu Package</li>
+  <li>Transformation Package</li>
+  <li>Workout Guide</li>
+</ul>`, sub_text: null
+  },
+  {
+    name: "6Hench Herbivore", profile_img: `${require("../../assets/images/tab-nav-img6.png")}`,banner_img: `${require("../../assets/images/resp-tabs-contant-img4.jpg")}`, content_title: "Lose Fat, Gain Muscle & Optimise Your Health", content_subtitle: "Customised, nutritional balanced, macronutrient balanced meal plans for my clients to ensure they reach their goals and feel satisfied while doing it! ", content_subtitle2:null, content_property: `
+    <ul class="cmn-list">
+    <li>Personalised workout plan 
+        (taking into account your abilities, 
+        equipment and time schedule)</li>
+    <li>Expertly calculated caloric and 
+        micronutrient needs</li>
+    <li>Customised meal plan specific to your 
+            needs, preferences and lifestyle</li>
+            <li>1:1 weekly coaching calls to teach,
+                support and provide accountability </li>
+            <li>State of the art app to track workouts, 
+                including video tutorials of your plan</li>
+            
+            <li>A supportive community on the same, 
+                life changing mission</li>
+        </ul>`, sub_text: "Let's dig in, eat up, and go vegan with ease!"
+  }
 ];
 function getTabs() {
   return services.map((service, index) => ({
     title: (
       <div className="tab-nav-outer">
-        <img src="images/tab-nav-img.png" alt="" />
+        <img src={service.profile_img} alt="" />
         <h6>{service.name}</h6>
       </div>
     ),
@@ -73,7 +137,7 @@ function getTabs() {
           <div className="right_area_tab">
             <div className="coching-srvc-box">
               <div className="thumb">
-                <img src={service.img} alt="" />
+                <img src={service.banner_img} alt="" />
               </div>
               <h3>{service.content_title}</h3>
               <p>{service.content_subtitle}</p>
@@ -258,10 +322,10 @@ function Nutrition_Fitness() {
         }}
       >
         <div className="container">
-          <div id="parentVerticalTab">
+          <div id="parentVerticalTab trnr_tab">
             <div className="row">
-              <div className="col-lg-5 mb-4 mb-lg-0">
-                <div className="top-content mb-4">
+              <div className="col-lg-12">
+                <div className="top-content mb-4 text-center">
                   <h2>Vegan Coaching Services</h2>
                   <p>
                     Transitioning to a plant-based vegan diet can be challenging
@@ -270,7 +334,7 @@ function Nutrition_Fitness() {
                   </p>
                 </div>
               </div>
-              <Tabs items={getTabs()}  tabsWrapperClass="resp-tabs-list hor_1" />
+              <Tabs items={getTabs()} showMore={false}  tabsWrapperClass="resp-tabs-list hor_1 " />
             </div>
           </div>
         </div>

@@ -1,7 +1,25 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+
 function Header() {
+
+  var body = document.body;
+  body.classList.remove("open-nav");
+  
+  function navtoggle(toggle_check) {
+    if(toggle_check){
+      document.body.classList.toggle("open-nav");
+      document.getElementById("navbarSupportedContent").classList.toggle("show");
+    }
+    else{
+      document.body.classList.toggle("open-nav");
+      document.getElementById("navbarSupportedContent").classList.toggle("show");
+    }
+    
+  }
+
+
   return (
     <header className="main-head">
       <div className="container">
@@ -14,6 +32,7 @@ function Header() {
           <div className="navigation">
             <nav className="navbar navbar-expand-lg">
               <button
+                onClick={() => navtoggle(true)}
                 className="navbar-toggler navbar-toggler-main"
                 type="button"
                 data-bs-toggle="collapse"
@@ -29,6 +48,7 @@ function Header() {
                 id="navbarSupportedContent"
               >
                 <button
+                onClick={() => navtoggle(false)}
                   className="navbar-toggler navbar-toggler-main"
                   type="button"
                   data-bs-toggle="collapse"
